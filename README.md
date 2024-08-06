@@ -12,6 +12,10 @@
 
 ## Setup source code
 
-`git clone https://github.com/binnehaha321/react-vite-typescript-antd-tailwind-prettier-eslint.git`
+1. Clone source: `git clone https://github.com/binnehaha321/react-vite-typescript-antd-tailwind-prettier-eslint.git`
+
+2. Install packages: `yarn`
+
+3. Run the project: `yarn dev`
 
 🍻 Cheers
