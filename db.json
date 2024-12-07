@@ -134,6 +134,13 @@
       "description": "",
       "dueDate": "2024-12-30T17:00:00.000Z",
       "status": "done"
+    },
+    {
+      "id": 643.7815721755569,
+      "title": "New task from Chiemena",
+      "description": "My task description",
+      "dueDate": "2024-12-13T17:00:00.000Z",
+      "status": "pending"
     }
   ]
 }

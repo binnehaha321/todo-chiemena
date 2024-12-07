@@ -3,7 +3,7 @@ import { Todo, TodoProps } from './type'
 import { FilterMode } from '../../../../context/TodoContext'
 import { DEFAULT_DATE_FORMAT } from '../../constants'
 
-const API = 'http://localhost:8000/todos'
+const API = `${import.meta.env.VITE_BASE_URL}/todos`
 
 export const getTodos = async () => {
 	try {

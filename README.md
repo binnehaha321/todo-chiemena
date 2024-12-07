@@ -68,6 +68,12 @@ Ensure you have the following installed:
    json-server --watch db.json --port 5000
    ```
 
+   or
+
+   ```bash
+   yarn run-db
+   ```
+
    Ensure the JSON-SERVER is running on `http://localhost:5000`.
 
 ### Access the App

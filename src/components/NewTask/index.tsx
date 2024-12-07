@@ -75,7 +75,7 @@ const NewTask = () => {
 					</Form.Item>
 				</div>
 				<Form.Item
-					label='Task name'
+					label='Description'
 					name='description'
 					className='flex-1'
 				>

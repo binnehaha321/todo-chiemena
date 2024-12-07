@@ -1,6 +1,6 @@
 import { Todo } from '../TodoList/components/Todos/type'
 
-const API = 'http://localhost:8000/todos'
+const API = `${import.meta.env.VITE_BASE_URL}/todos`
 
 export const addNewTask = async (taskData: Todo) => {
 	try {

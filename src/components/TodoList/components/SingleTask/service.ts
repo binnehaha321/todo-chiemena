@@ -8,12 +8,15 @@ export const isOverdue = (dueDate: string) => {
 
 export const removeTask = async (taskId: number) => {
 	try {
-		const res = await fetch(`http://localhost:8000/todos/${taskId}`, {
-			method: 'DELETE',
-			headers: {
-				'Content-Type': 'application/json'
+		const res = await fetch(
+			`${import.meta.env.VITE_BASE_URL}/todos/${taskId}`,
+			{
+				method: 'DELETE',
+				headers: {
+					'Content-Type': 'application/json'
+				}
 			}
-		})
+		)
 		return res
 	} catch (error) {
 		throw error
@@ -22,13 +25,16 @@ export const removeTask = async (taskId: number) => {
 
 export const changeTaskStatus = async (taskId: number, status: Status) => {
 	try {
-		const res = await fetch(`http://localhost:8000/todos/${taskId}`, {
-			method: 'PATCH',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({ status })
-		})
+		const res = await fetch(
+			`${import.meta.env.VITE_BASE_URL}/todos/${taskId}`,
+			{
+				method: 'PATCH',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({ status })
+			}
+		)
 		return res
 	} catch (error) {
 		throw error
