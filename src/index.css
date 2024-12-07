@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	line-height: 1;
+	background-color: coral;
+	height: calc(100dvh - 2.5rem);
+	overflow: hidden;
+}
